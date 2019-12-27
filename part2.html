@@ -5,13 +5,236 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML Documents</title>
-    <h1>Become a Web Developer Linkedin Course</h1>
 
-    <h2>4 Structuring Content</h2>
+    <style>
+    
+    .book{
+
+        background: #369;
+        padding: 12px;
+        width: 200px;
+        color: white;
+        margin-bottom:  14x;
+
+    }
+
+    .book h5 {
+
+        font: 2.8 em Arial, sans-serif;
+
+    }
+
+
+    </style>
 
 
 </head>
+
 <body>
+    <h1>Become a Web Developer Linkedin Course</h1>
+
+    <h3>Semantic Elements</h3>
+    <ul>
+        <li>header</li>
+        <li>main</li>
+        <li>footer</li>
+    </ul>
+
+    <h3>Sectioaning Elements</h3>
+    <li>h1,h2,h3</li>
+    <li>nav</li>
+    <li>article</li>
+    <li>section</li>
+    <li>aside</li>
+
+
+
+    <h5>Nav Element</h5>
+    <p>Use for navigation of the page, if it is a list you can use the ul</p>
+
+    <h5>the article element</h5>
+    <p>a complete, self-contained composition in a document, that's in principle, independently distribuited or reusable</p>
+    <p>It could be nested </p>
+    <p>when a main content is all one single self-contained composition it should be mark up with main element
+        it would be redundant with a article element
+    </p>
+
+    <p>Put the whole content after navigation element within an article</p>
+
+    <p>According to the author he suses both since the main element does not create a section
+
+    </p>
+
+    <h5>Section Element</h5>
+
+    <p>thematic grouping of content , the theme of each section should be identified, typically by including a heading </p>
+    <p>introduction , news items, contact information</p>
+
+    <p>Article: again if it can stand alone, if it can be published on its own probably sould be an articles </p>
+
+    <p>It is not a generic container like div. Use Div instead</p>
+
+    <p>Sometimes you have section withing articles. However, you can have the other way around. articles withing sections could be :)</p>
+
+
+    <h5>Aside Element</h5>
+
+    <p>To represent related content. Content that is tangentially related to the content aorund the aside element. usually as aside bars</p>
+
+    <p>typographical effects like pull quotes  or sidebars, for advertising, for gorups of nav elements </p>
+    <p>Jargon: it's a sectional element: meaning it will create a new section</p>
+
+    <p>Remeber where you place this element indicates which content it relates to </p>
+
+
+    <h5>Div Element</h5>
+
+    <p>It was used to divide up content then classes and IDs attributes were used to pass along semnatic meaning of the content</p>
+
+    <p>Use to grou content</p>
+    <p>It has no especial meanig. It can be used with the class, lang and title attributes 
+        to mark up semantic common to a group of consecutive element</p>
+        
+        
+    <h5>Header Element</h5>
+
+    <p>Represents the introductory content for its nearest ancestor (parent) sectioning content like articles, sections, a sides 
+        or Sectioaning roor that would be the body or not all with a parent element the entire page </p>
+        
+    <p>Contains the sections headings but not required just to wrap a section's table of content, a search form or any relevant logos </p>
+
+    <p>According to the author it will include inside the body for the example, h1 and h2 and nav elements. This means you can have more h1 </p>
+    <p>Header usually contains h1 , h2, h3. they think they are sectioning elements 
+        you usually see a section that it is represented by a header </p>
+    <article>
+ <!--This is introducroty content for this article-->
+        <header role="banner">
+            <h3>
+                <p>
+                </p>
+            </h3>
+        </header>
+    </article>
+
+    <h5>Footer Element</h5>
+
+    <p>It needs info about its section such as who wrote it, copyright data </p>
+    <p>When it contains entire sections, they represent appendices, indexes, long colophons verbose license agreements</p>
+    <p>Contact Information belongs in an adress element possibly itself inside a footer</p>
+
+    <p>header and footer it's a lot of judgment call on your part </p>
+
+    <h5>Main Element</h5>
+
+    <p>represents the main content of the body of a document or application</p>
+    <p>The main content area consists of content that is directly related to or expands upon the central topic of a document
+        or central functionality of an application
+    </p>
+
+    <p>When a screen reader, search engines , you want the main content , it can only be used once</p>
+
+    <p>The main element  is not sectionaing content </p>
+
+    <p>content that is unique to that document and excludes content that is repeated across a set of documents</p>
+
+    <h5>WAI- ARIA roles</h5>
+
+    <p>Intended as a navigational landmarks </p>
+    <ul>
+
+
+        <li>application</li>
+        <li>banner</li>
+        <li>complementary</li>
+        <li>contectinfo</li>
+        <li>form</li>
+        <li>main</li>
+        <li>navigatin</li>
+        <li>search</li>
+
+
+    </ul>
+
+    <p>It can be overkill because it is the same as the other elements but for now you can include. e.g the banner</p>
+
+
+
+    
+
+ 
+
+    <nav role="navigation"> 
+        <p>site navigation</p>
+    </nav>
+
+    <main role="main">
+
+    <article role="article">
+        <h2>Things I like</h2>
+
+        <section>
+            <h3>my favorite books</h3>
+
+            <h4>Fiction</h4>
+            <ul>
+
+                <li>Animal Farm</li>
+                <li>1984</li>
+            </ul>
+            
+
+            <!--This is an example of div-->
+            
+            <div class="book">
+                <h5>Animal Farm</h5>
+                <p>by George Orwell</p>
+                <p>Animals revolt against their farmer only to find that the pigs that take his place are just as bad.</p>
+            </div>
+
+
+
+
+
+            <h4>Non-Fiction</h4>
+
+            <ul>
+                <li>Theodore Rex</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>my favorite movies and shows</h3>
+
+            <h4>Movies</h4>
+
+            <li>The pianist</li>
+
+            <h4>TV Shows</h4>
+            <ul>
+
+                <li>The Flash</li>
+                <li>Mr Robot</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>my favorite music</h3>
+        </section>
+
+        <aside role="complementary">
+            <h3>Spotlight favorite</h3>
+        </aside>
+        
+    </article>
+
+</main>
+
+    <footer role="contentinfo">
+
+        <address>
+            @axisrod
+        </address>
+    </footer>
     
 </body>
 </html>
